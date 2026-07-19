@@ -13,6 +13,9 @@ jobs:
   auto-build:
     name: Auto build Aseprite for Windows x86
     runs-on: windows-2022
+    
+    env:
+      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: "true"
 
     steps:
       - name: Checkout repository
